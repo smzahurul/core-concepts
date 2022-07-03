@@ -1,6 +1,7 @@
-import logo from "./logo.svg";
-import "./App.css";
 import React from "react";
+// import logo from "./logo.svg";
+import "./App.css";
+
 
 function App() {
   const persons = [{ name: "SM. Zahurul Islam", age: 26 }];
@@ -11,12 +12,13 @@ function App() {
     { name: "PDF Reader", price: "$6.70" },
     { name: "illustrator", price: "$10.20" },
     { name: "Windows-11", price: "$300.20" },
+    { name: "Windows-10", price: "$200.20" },
   ];
   const friend = [{ name: "Rana", age: "33", job: "business" }];
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <div>
           <p>Iam a React Person</p>
           <p>Learn React JS</p>
@@ -39,6 +41,10 @@ function App() {
             <Product
               name={products[3].name}
               price={products[3].price}
+            ></Product>
+             <Product
+              name={products[4].name}
+              price={products[4].price}
             ></Product>
           </div>
 
